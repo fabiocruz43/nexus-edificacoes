@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexus Edificações | Regularização, Laudos e Obras em São Paulo</title>
+
+    <meta name="description" content="Nexus Edificações: serviços técnicos em construção civil, regularização de imóveis, laudos técnicos, administração de obras, reformas, projetos e planejamento em São Paulo e região.">
+    <meta name="keywords" content="técnico em edificações, regularização de imóveis, laudos técnicos, administração de obras, construção civil, reformas, São Paulo, Grande São Paulo">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+   <div class="logo">
+    <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="Nexus Edificações">
+</div>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-conteudo">
+        <p class="tagline">São Paulo • Grande São Paulo • Cidades vizinhas</p>
+
+        <h1>Soluções Técnicas em Construção Civil</h1>
+
+        <p>
+            Regularização de imóveis, laudos técnicos, administração de obras,
+            projetos, reformas, planejamento, gerenciamento e consultoria técnica.
+        </p>
+
+        <div class="botoes">
+            <a class="botao-principal" href="#orcamento">Solicitar Orçamento</a>
+            <a class="botao-secundario" href="#servicos">Ver Serviços</a>
+        </div>
+    </div>
+</section>
+
+<section class="servicos" id="servicos">
+    <h2>Serviços Profissionais</h2>
+    <p class="subtitulo">Clique em um serviço para ver os detalhes.</p>
+
+    <div class="cards">
+        <div class="card" onclick="mostrarServico('regularizacao')">
+            <span>🏠</span>
+            <h3>Regularização de Imóveis</h3>
+            <p>Documentação, plantas, reformas e regularização de construções.</p>
+        </div>
+
+        <div class="card" onclick="mostrarServico('laudos')">
+            <span>📋</span>
+            <h3>Laudos Técnicos</h3>
+            <p>Vistorias, infiltrações, rachaduras e pareceres técnicos.</p>
+        </div>
+
+        <div class="card" onclick="mostrarServico('administracao')">
+            <span>🏗️</span>
+            <h3>Administração de Obras</h3>
+            <p>Controle de equipes, materiais, cronograma e canteiro.</p>
+        </div>
+
+        <div class="card" onclick="mostrarServico('projetos')">
+            <span>📐</span>
+            <h3>Projetos e Planejamento</h3>
+            <p>Plantas, reformas, ampliações, cronogramas e quantitativos.</p>
+        </div>
+
+        <div class="card" onclick="mostrarServico('instalacoes')">
+            <span>⚡</span>
+            <h3>Instalações</h3>
+            <p>Elétrica, hidráulica, listas de materiais e acompanhamento.</p>
+        </div>
+
+        <div class="card" onclick="mostrarServico('reformas')">
+            <span>🔨</span>
+            <h3>Execução e Reformas</h3>
+            <p>Reformas, acabamentos, telhados, impermeabilização e obras.</p>
+        </div>
+    </div>
+</section>
+
+<section class="detalhes-servico">
+    <div class="detalhe ativo" id="regularizacao">
+        <h2>Regularização de Imóveis</h2>
+        <ul>
+            <li>Regularização de construção</li>
+            <li>Regularização de reforma</li>
+            <li>Planta para regularização</li>
+            <li>Apoio para Habite-se</li>
+            <li>Atualização de plantas</li>
+            <li>Documentação técnica</li>
+        </ul>
+    </div>
+
+    <div class="detalhe" id="laudos">
+        <h2>Laudos Técnicos e Vistorias</h2>
+        <ul>
+            <li>Laudo de infiltração</li>
+            <li>Laudo de rachaduras</li>
+            <li>Relatório fotográfico</li>
+            <li>Vistoria técnica</li>
+            <li>Inspeção predial básica</li>
+            <li>Parecer técnico</li>
+        </ul>
+    </div>
+
+    <div class="detalhe" id="administracao">
+        <h2>Administração de Obras</h2>
+        <ul>
+            <li>Administração de canteiro</li>
+            <li>Controle de materiais</li>
+            <li>Controle de equipes</li>
+            <li>Fiscalização de serviços</li>
+            <li>Relatório de andamento</li>
+            <li>Controle de cronograma</li>
+        </ul>
+    </div>
+
+    <div class="detalhe" id="projetos">
+        <h2>Projetos e Planejamento</h2>
+        <ul>
+            <li>Planta baixa</li>
+            <li>Projeto de reforma</li>
+            <li>Projeto de ampliação</li>
+            <li>Levantamento cadastral</li>
+            <li>Quantitativo de materiais</li>
+            <li>Cronograma físico-financeiro</li>
+        </ul>
+    </div>
+
+    <div class="detalhe" id="instalacoes">
+        <h2>Instalações Elétricas e Hidráulicas</h2>
+        <ul>
+            <li>Projeto elétrico residencial</li>
+            <li>Projeto hidráulico</li>
+            <li>Lista de materiais elétricos</li>
+            <li>Lista de materiais hidráulicos</li>
+            <li>Dimensionamento básico</li>
+            <li>Acompanhamento técnico</li>
+        </ul>
+    </div>
+
+    <div class="detalhe" id="reformas">
+        <h2>Execução e Reformas</h2>
+        <ul>
+            <li>Reforma residencial</li>
+            <li>Impermeabilização</li>
+            <li>Acabamentos</li>
+            <li>Telhados</li>
+            <li>Revestimentos</li>
+            <li>Construção civil em geral</li>
+        </ul>
+    </div>
+</section>
+
+<section class="orcamento" id="orcamento">
+    <h2>Solicite um Orçamento</h2>
+    <p>Preencha seus dados. Eles serão salvos no sistema e enviados pelo WhatsApp.</p>
+
+    <form action="/orcamento" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+
+        <input type="text" name="whatsapp" placeholder="Seu WhatsApp com DDD. Ex: 11999999999" required>
+
+        <input type="email" name="email" placeholder="Seu e-mail">
+
+        <input type="text" name="cidade" placeholder="Cidade ou bairro" required>
+
+        <select name="servico" required>
+            <option value="">Escolha o serviço</option>
+            <option>Regularização de imóvel</option>
+            <option>Laudo técnico</option>
+            <option>Administração de obra</option>
+            <option>Projeto ou planejamento</option>
+            <option>Instalações elétrica/hidráulica</option>
+            <option>Reforma ou execução</option>
+        </select>
+
+        <textarea name="mensagem" placeholder="Descreva o que você precisa" required></textarea>
+
+        <button type="submit">Enviar cadastro e abrir WhatsApp</button>
+    </form>
+</section>
+
+
+
+<section class="galeria" id="galeria">
+    <h2>Áreas de Atuação</h2>
+
+    <div class="galeria-grid">
+        <div>Regularização</div>
+        <div>Laudos</div>
+        <div>Obras</div>
+        <div>Reformas</div>
+        <div>Projetos</div>
+        <div>Instalações</div>
+    </div>
+</section>
+
+<section class="sobre" id="sobre">
+    <h2>Sobre a Nexus Edificações</h2>
+
+    <p>
+        A Nexus Edificações atua com soluções técnicas em construção civil
+        para São Paulo, Grande São Paulo e cidades vizinhas. A proposta é unir
+        experiência prática de obra, visão técnica, controle de custos,
+        planejamento e orientação profissional para evitar desperdícios,
+        atrasos, retrabalhos e prejuízos.
+    </p>
+</section>
+
+<section class="contato" id="contato">
+    <h2>Atendimento</h2>
+    <p>Atendimento em São Paulo e cidades vizinhas.</p>
+
+    <a class="botao-principal" href="https://wa.me/5511948822408" target="_blank">
+        Chamar no WhatsApp
+    </a>
+</section>
+
+<a class="whatsapp-flutuante" href="https://wa.me/5511948822408" target="_blank">
+    💬
+</a>
+
+<footer>
+    <p>© 2026 Nexus Edificações — Soluções Técnicas em Construção Civil</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
