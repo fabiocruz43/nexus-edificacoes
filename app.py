@@ -281,7 +281,15 @@ def logout():
     session.clear()
     return redirect("/login")
 
+from flask import send_from_directory
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('static', 'robots.txt')
 if __name__ == "__main__":
     print("Servidor Nexus Edificações iniciado...")
     serve(app, host="0.0.0.0", port=5000)
