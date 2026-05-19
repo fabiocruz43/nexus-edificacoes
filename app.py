@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, render_template_string, session, url_for
+from flask import Flask, render_template, request, redirect, render_template_string, session
 from waitress import serve
 from urllib.parse import quote
 from database import criar_tabela, salvar_cliente, listar_clientes
@@ -16,6 +16,31 @@ criar_tabela()
 @app.route("/")
 def home():
     return render_template("index.html")
+
+
+@app.route("/regularizacao")
+def regularizacao():
+    return render_template("regularizacao.html")
+
+
+@app.route("/laudos")
+def laudos():
+    return render_template("laudos.html")
+
+
+@app.route("/projetos")
+def projetos():
+    return render_template("projetos.html")
+
+
+@app.route("/consultoria")
+def consultoria():
+    return render_template("consultoria.html")
+
+
+@app.route("/contato")
+def contato():
+    return render_template("contato.html")
 
 
 @app.route("/orcamento", methods=["POST"])
