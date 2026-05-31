@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, render_template_string, session
+from flask import Flask, render_template, request, redirect, render_template_string, session, send_from_directory
 from waitress import serve
 from urllib.parse import quote
 from database import criar_tabela, salvar_cliente, listar_clientes
@@ -41,6 +41,72 @@ def consultoria():
 @app.route("/contato")
 def contato():
     return render_template("contato.html")
+
+
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
+
+
+@app.route("/servicos")
+def servicos():
+    return render_template("servicos.html")
+
+
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
+
+@app.route("/blog/como-regularizar-imovel-sp")
+def artigo_regularizacao():
+    return render_template("artigo_regularizacao.html")
+
+
+@app.route("/blog/quando-e-necessario-um-laudo-tecnico")
+def artigo_laudo():
+    return render_template("artigo_laudo_tecnico.html")
+
+
+
+@app.route("/blog/quanto-custa-regularizar-imovel")
+def artigo_custo_regularizacao():
+    return render_template("artigo_custo_regularizacao.html")
+
+
+@app.route("/blog/o-que-e-habite-se")
+def artigo_habite_se():
+    return render_template("artigo_habite_se.html")
+
+
+@app.route("/blog/diferenca-entre-art-e-rrt")
+def artigo_art_rrt():
+    return render_template("artigo_art_rrt.html")
+
+
+@app.route("/blog/problemas-de-infiltracao")
+def artigo_infiltracao():
+    return render_template("artigo_infiltracao.html")
+
+
+@app.route("/blog/trincas-e-rachaduras")
+def artigo_trincas():
+    return render_template("artigo_trincas.html")
+
+
+@app.route("/blog/tecnico-em-edificacoes")
+def artigo_tecnico_edificacoes():
+    return render_template("artigo_tecnico_edificacoes.html")
+
+
+@app.route("/blog/regularizacao-de-reformas")
+def artigo_regularizacao_reformas():
+    return render_template("artigo_regularizacao_reformas.html")
+
+
+@app.route("/blog/laudo-de-vistoria")
+def artigo_laudo_vistoria():
+    return render_template("artigo_laudo_vistoria.html")
 
 
 @app.route("/orcamento", methods=["POST"])
@@ -281,15 +347,17 @@ def logout():
     session.clear()
     return redirect("/login")
 
-from flask import send_from_directory
 
-@app.route('/sitemap.xml')
+@app.route("/sitemap.xml")
 def sitemap():
-    return send_from_directory('static', 'sitemap.xml')
+    return send_from_directory("static", "sitemap.xml")
 
-@app.route('/robots.txt')
+
+@app.route("/robots.txt")
 def robots():
-    return send_from_directory('static', 'robots.txt')
+    return send_from_directory("static", "robots.txt")
+
+
 if __name__ == "__main__":
     print("Servidor Nexus Edificações iniciado...")
     serve(app, host="0.0.0.0", port=5000)
