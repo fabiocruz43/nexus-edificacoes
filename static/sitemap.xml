@@ -1,34 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://nexusedificacoes.com.br/</loc>
-<priority>1.0</priority>
-</url>
+<url><loc>https://nexusedificacoes.com.br/</loc><priority>1.0</priority></url>
+<url><loc>https://nexusedificacoes.com.br/regularizacao</loc><priority>0.9</priority></url>
+<url><loc>https://nexusedificacoes.com.br/laudos</loc><priority>0.9</priority></url>
+<url><loc>https://nexusedificacoes.com.br/projetos</loc><priority>0.9</priority></url>
+<url><loc>https://nexusedificacoes.com.br/consultoria</loc><priority>0.9</priority></url>
+<url><loc>https://nexusedificacoes.com.br/contato</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/sobre</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/servicos</loc><priority>0.9</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog</loc><priority>0.9</priority></url>
 
-<url>
-<loc>https://nexusedificacoes.com.br/regularizacao</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://nexusedificacoes.com.br/laudos</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://nexusedificacoes.com.br/projetos</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://nexusedificacoes.com.br/consultoria</loc>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://nexusedificacoes.com.br/contato</loc>
-<priority>0.8</priority>
-</url>
+<url><loc>https://nexusedificacoes.com.br/blog/como-regularizar-imovel-sp</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/quando-e-necessario-um-laudo-tecnico</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/quanto-custa-regularizar-imovel</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/o-que-e-habite-se</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/diferenca-entre-art-e-rrt</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/problemas-de-infiltracao</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/trincas-e-rachaduras</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/tecnico-em-edificacoes</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/regularizacao-de-reformas</loc><priority>0.8</priority></url>
+<url><loc>https://nexusedificacoes.com.br/blog/laudo-de-vistoria</loc><priority>0.8</priority></url>
 
 </urlset>
